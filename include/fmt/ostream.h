@@ -88,7 +88,7 @@ struct basic_ostream_formatter : formatter<basic_string_view<Char>, Char> {
   }
 };
 
-using ostream_formatter = basic_ostream_formatter<char>;
+FMT_EXPORT using ostream_formatter = basic_ostream_formatter<char>;
 
 template <typename T, typename Char>
 struct formatter<detail::streamed_view<T>, Char>

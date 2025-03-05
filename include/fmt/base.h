@@ -1030,7 +1030,7 @@ enum {
   pointer_set = set(type::pointer_type)
 };
 
-struct view {};
+FMT_EXPORT struct view {};
 
 template <typename Char, typename T> struct named_arg;
 template <typename T> struct is_named_arg : std::false_type {};
